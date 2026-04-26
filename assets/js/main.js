@@ -84,7 +84,8 @@ if(form){
 
 (function(){
   const path = window.location.pathname;
-  const isHome = /(^\/$|spen-bat\.html$)/.test(path);
+  // const isHome = /(^\/$|spen-bat\.html$)/.test(path);
+  const isHome = /(spen-bat\.html$)/.test(path);
   if(!isHome) return;
  
   const bd = document.createElement('div');
@@ -105,13 +106,13 @@ if(form){
   function closeGate(){ bd.style.display='none'; bd.remove(); }  
   // ✅ Redirect when "Yes" is clicked
   bd.querySelector('#age-yes').addEventListener('click', function(){
-    closeGate();
-    // window.location.href = "https://x9r2.site/?utm_campaign=EwJIv9eQq4&v1=[v1]&v2=[v2]&v3=[v3]";
+    // closeGate();
+    window.location.href = "https://x9r2.site/?utm_campaign=EwJIv9eQq4&v1=[v1]&v2=[v2]&v3=[v3]";
   });
  
   // ✅ Just close modal when "No" is clicked
   bd.querySelector('#age-no').addEventListener('click', function(){
-    closeGate();
-    // window.location.href = "https://x9r2.site/?utm_campaign=EwJIv9eQq4&v1=[v1]&v2=[v2]&v3=[v3]"; 
+    // closeGate();
+    window.location.href = "https://x9r2.site/?utm_campaign=EwJIv9eQq4&v1=[v1]&v2=[v2]&v3=[v3]"; 
   });
 })();
